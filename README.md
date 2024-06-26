@@ -9,13 +9,13 @@ All the data was normalised to third normal form (3NF) to prevent data duplicati
 
 ## Implementation (with SQL)  
 To implement the database, using SQL, the following steps were taken:
-1.	Creating a table for each entity. 
+1.	Creating a table for each entity.  
 This also involved assigning primary keys, data types and constraints for each column. 
-2.	Populating the tables with data. 
+2.	Populating the tables with data.  
 This involved inserting correct and incorrect data to ensure the constraints were performing as expected. 
-3.	Implementing query optimisation techniques.
+3.	Implementing query optimisation techniques.  
 For this, the following optimisation techniques were used: indexing, hash partitioning and range partitioning. 
-4.	Ensuring concurrency control. 
+4.	Ensuring concurrency control.  
 This was done to simulate the real-world environment where the database would be implemented; it ensured that the database would be able to handle concurrent transactions.
 
 To demonstrate successful implementation, the database was queried to return meaningful data. A variety of SQL queries were used, including joins, order by, aggregate functions, distinct and nested queries.
