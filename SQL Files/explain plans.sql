@@ -1,4 +1,3 @@
-#Mitra
 #Retrieve the top 3 airlines with the highest average ticket prices:
 EXPLAIN SELECT A.AirlineName, ROUND(AVG(T.Price)) AS AvgTicketPrice
 FROM AIRLINE A
@@ -15,8 +14,7 @@ GROUP BY SZ.ZoneName
 ORDER BY ShiftCount DESC
 LIMIT 2;
 
-#List the gates with more than 1 flight, along with the total number of flights departing from that gate in 2023, 
-#	ordered by the number of flights:
+#List the gates with more than 1 flight, along with the total number of flights departing from that gate in 2023, ordered by the number of flights:
 EXPLAIN SELECT g.GateID, COUNT(f.FlightID) AS NumFlights
 FROM GATE g
 LEFT JOIN FLIGHT f ON g.GateID = f.GateID
@@ -50,7 +48,6 @@ WHERE PassengerID IN (
     WHERE A.AirlineName LIKE 'QA%'
 );
 
-#Shriya
 #Find the total number of flights departing from each terminal in May, ordered by terminal ID:
 EXPLAIN SELECT G.TerminalID, COUNT(F.FlightID) AS TotalFlights
 FROM GATE G
@@ -99,7 +96,6 @@ FROM (
 ) AS EmployeeSchedules
 ORDER BY ScheduleCount DESC;
 
-#Muqadas
 #Find the total number of checked-in baggage items for each flight:
 EXPLAIN SELECT bp.FlightID, COUNT(b.BaggageID) AS CheckedInBaggageCount
 FROM BOARDING_PASS bp
@@ -150,5 +146,3 @@ FROM (
     GROUP BY E.EmployeeID
 ) AS EmployeeShifts
 ORDER BY ShiftCount DESC;
-
-
