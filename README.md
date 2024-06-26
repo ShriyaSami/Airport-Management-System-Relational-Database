@@ -1,9 +1,9 @@
 # Relational Database for Airport Management System
-**This project designs and implements a relational database to meet specific business requirements. The database is for an airport management system that controls the daily operations that provide services to airlines and passengers.**  
+**This project designs and implements a relational database to meet specific business requirements. The database is for an airport management system that controls the daily operations that provide services to airlines and passengers. The SQL files for this are available in the SQL files folder.**  
 
 ## Entity Relationship Diagram (ERD)
 Based on the business rules, entities and attributes were identified. The relationships, connectivites and cardinalities between the entities were also mapped out. This has been modelled in the Entity Relationship Diagram (ERD) below. 
-![Entity Relationship Diagram of database for airport management system]()
+![Entity Relationship Diagram of database for airport management system](https://github.com/ShriyaSami/Relational-Database/blob/7eef7c73870f61ec6795b156f1f2f0ffae718941/ERD.png)
 
 All the data was normalised to third normal form (3NF) to prevent data duplication, data inconsistency and data redundancy.  
 
